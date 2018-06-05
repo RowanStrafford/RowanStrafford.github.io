@@ -6,6 +6,14 @@ body{
     background: : #f3f3f3;
 }
 
+.center 
+{ 
+    margin: 0 auto;
+   	display: block;
+   	width: 560px;
+   	vertical-align:text-bottom;
+}
+
 .button{
     color: #919191;
     font-family: "Times New Roman", Times, serif;
