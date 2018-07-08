@@ -2,9 +2,16 @@
 <head>    
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-    <script src="galleria/galleria-1.5.7.min.js"></script>
+    <script src="galleria-1.5.7.min.js"></script>
 </head>
 <body>    
+    
+    <script>
+(function() { 
+    if (Galleria) { $("body").text('Galleria works') }
+}());
+</script>
+    
     <header>
             <div class="container">            
                 <div class="logo">
