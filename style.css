@@ -43,6 +43,21 @@ header{
     overflow: hidden;
 }
 
+.photographyGallery{
+    margin:10px 50px;
+}
+
+.photographyGallery img{
+    width: 230px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.photographyGallery img.hover{
+    filter: grayscale(0);
+}
+
 .logo{
     float: left;
     margin-top: 80px;
