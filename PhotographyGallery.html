@@ -3,15 +3,25 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script src="galleria-1.5.7.min.js"></script>
+    
+    <style>
+        .galleria{ max-width: 700px; height: 400px; background: #000}
+    </style>    
 </head>
-<body>    
+<body>   
+    
+    <div class="galleria">
+    <img src="images/Marina/Marina1.JPG">
+    <img src="images/Marina/Marina2.JPG">
+    </div>
     
     <script>
-(function() { 
-    if (Galleria) { $("body").text('Galleria works') }
-}());
-</script>
-    
+        (function() {
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('.galleria');
+        }());
+    </script>
+
     <header>
             <div class="container">            
                 <div class="logo">
