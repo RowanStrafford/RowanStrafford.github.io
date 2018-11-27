@@ -1,52 +1,126 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
 <title>Website</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
     
      <body>
-    	<header>
-            <div class="container">            
-                <div class="logo">
-                    
-                </div>   
+         <div class="main">  
+             
+             <p><br></p>
+             <h1>Rowan Strafford</h1>
+             <hr>
+             
+             <h2 id="PortfolioSection">Graduate Games and Software Developer</h2>
+             
+             <div id="navbar">
+             <a class="active" href="#PortfolioSection">Portfolio</a>
+             <a href="#ShowreelSection">Showreel</a>
+             <a href="#ContactsSection">Contacts</a>
+             </div>
+             
+             <h2>Portfolio</h2>
+             
+             <div class="row">
+                 <div class="Column">
+                 <div class="content">
+                    <img class="PortfolioImages" src="Images/NN.JPG" alt="Big Byte" style="width: 100%">
+                    <h3>Visual Neural Network (C++)</h3>
+                        <p>Big Byte is a mobile game available on both the App Store and Google Play Store. It was made by myself and James Skett.</p>         
+                        <a href="NeuralNet.html"><img src="Images/ViewMore.png" style="width: 30%"></a>
+                    </div>
+                 </div>  
+                 
+                 <div class="column">
+                    <div class="content">
+                    <img class="PortfolioImages" src="Images/Selector.jpg" alt="Big Byte" style="width: 100%">
+                    <h3>Behaviour Tree in C++ and DirectX 11</h3>
+                        <p>Animal behaviours simulated using a Behaviour Tree. Research into Machine Learning to be incorperated into the Behaviour Tree.</p> 
+                        <a href="BT.html"><img src="Images/ViewMore.png" style="width: 30%"></a>
+                    </div>
+                </div>
+                 
+                 <div class="column">
+                    <div class="content">
+                    <img class="PortfolioImages" src="Images/BigByteTemp.jpg" alt="Big Byte" style="width: 100%">
+                    <h3>Big Byte</h3>
+                        <p>Big Byte is a mobile game available on both the App Store and Google Play Store. It was made by myself and James Skett.</p>         
+                        <a href="BigByte.html"><img src="Images/ViewMore.png" style="width: 30%"></a>
+                    </div>
+                 </div>
+                 
+                  <div class="column">
+                    <div class="content">
+                    <img class="PortfolioImages" src="Images/UnityTemp.jpg" alt="Big Byte" style="width: 100%">
+                    <h3>Unity Projects</h3>
+                        <p>A collection of Unity projects I have worked on. Includes 2D and 3D prototypes</p>
+                        <a href="UnityProjects.html"><img src="Images/ViewMore.png" style="width: 30%"></a>
+                    </div>
+                </div>
+                 
+                  <div class="column">
+                    <div class="content">
+                    <img class="PortfolioImages" src="Images/SpaceShooterThumb.jpg" alt="Big Byte" style="width: 100%">
+                    <h3>DirectX 11 C++ Space Shooter</h3>
+                        <p>Browse my projects involving AI. Includes programs using State Machines, Behaviour Trees and Neural Networks.</p>    
+                        <a id="ShowreelSection" href="SpaceShooter.html"><img src="Images/ViewMore.png" style="width: 30%"></a>
+                    </div>
+                </div>
+                 <div class="column">
+                     <div class="content">
+                         <img class="PortfolioImages" src="Images/PS4.jpg" alt="Big Byte" style="width: 100%">
+                    <h3>PlayStation 4 Development Kit Project (C++)</h3>
+                        <p>My project involving creating an application using a PS4 Dev Kit. Object-Oriented C++ was used.</p>    
+                        <a id="ShowreelSection" href="PS4.html"><img src="Images/ViewMore.png" style="width: 30%"></a>
+                     </div>
+                 </div>
+             </div>
+             
+  <div class="content">
+  <h2>Showreel</h2> 
+      <video width="100%" height="auto" poster="Images/BigBytePoster.JPG" controls>
+      <source src="Videos/.mp4" type="video/mp4">
+      </video>  
+   </div> 
+             
+<div class="content">
+  <h2>Contact</h2> 
+  <p><b>Email: </b>rowan.strafford@ymail.com</p>
+  <p><b>LinkedIn: </b>https://www.linkedin.com/in/rowan-strafford-994091167</p> 
+    
+    <a href="Docs/CV.docx" download>
+    <img class="CVBtn" src="Images/CVButton.png" alt="CV">
+    </a> 
 
 
-		<nav>                
-                <li><a href="index.html" style="text-decoration:none" class="button">About</a></li>
-                <li><a href="Gallery.html" style="text-decoration:none" class="button">Portfolio</a></li>
-		<li><a href="Photography.html" style="text-decoration:none" class="button">Photography</a></li>
-                </nav>
+   </div> 
+             
+    </div>
+         
+         <footer class="MainFooter">
+         <p>Copyright &copy; Rowan Strafford 2018</p>
+         </footer>        
+         
+         
+         
+<script>
+window.onscroll = function() {myFunction()};
 
-		</div>	
-         </header>
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>        
          
     </body>
 	           
-            	<h4 class="center"><u>DirectX 11 Behaviour Tree simulation</u></h4>
-            	<iframe class="center" width="480" height="270" src="https://www.youtube.com/embed/rvm5EnW0JMA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            	
-		<p><br></p>	
-
-            	<h4 class="center"><u>3D DirectX 11 space shooter</u></h4>
-           	<iframe class="center" width="480" height="270" src="https://www.youtube.com/embed/rQU0BR0cWPg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-    
- 	    	<p><br></p>	
- 
- 		<h4 class="center"><u>PlayStation 4 Dev Kit Work</u></h4>
-            	<iframe class="center" width="480" height="270" src="https://www.youtube.com/embed/fZ_YKFuR_Q0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 		
-  		
-	 	<p><br></p>	
-
-		<h4 class="center"><u>Unity mobile game using touch input</u></h4>
-		<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/j5AwKuWBOyQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
- 		
-		<p><br></p>
-	
-		<h4 class="center"><u>Unity Android - Grid based system</u></h4>
-		<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/oviqQ6zodCA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         
-		 <p><br></p>	
-		 <p><br></p>	
-		 <p><br></p>	
+        
 </html>
