@@ -33,6 +33,11 @@ h1 {
     width: 50%;
 }
 
+.altColumn {
+    float: left;
+    width: 25%;
+}
+
 .ExtendedColumn {
     float: left;
     width: 100%;
